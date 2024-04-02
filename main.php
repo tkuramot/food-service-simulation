@@ -12,8 +12,8 @@ $cheeseBurger = new \FoodItems\CheeseBurger();
 $fettuccine = new \FoodItems\Fettuccine();
 $hawaiianPizza = new \FoodItems\Spaghetti();
 
-$Inavah = new \Persion\Employees\Chef("Inayah Lozano", 40, "Osaka", 1, 30);
-$Nadia = new \Persion\Employees\Cashier("Nadia Valentine", 21, "Tokyo", 1, 20);
+$Inavah = new \Persons\Employees\Chef("Inayah Lozano", 40, "Osaka", 1, 30);
+$Nadia = new \Persons\Employees\Cashier("Nadia Valentine", 21, "Tokyo", 1, 20);
 
 $saizeriya = new \Restaurants\Restaurant(
     [
@@ -29,7 +29,7 @@ $saizeriya = new \Restaurants\Restaurant(
 
 $interestedTastesMap = [
     "Margherita" => 1,
-    "CheeseBurger" => 2,
+    "Cheese Burger" => 2,
     "Spaghetti" => 1
 ];
 

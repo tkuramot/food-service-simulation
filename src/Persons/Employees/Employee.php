@@ -1,6 +1,8 @@
 <?php
 
-namespace Person;
+namespace Persons\Employees;
+
+use Persons\Person;
 
 class Employee extends Person
 {
@@ -12,5 +14,15 @@ class Employee extends Person
         parent::__construct($name, $age, $address);
         $this->employeeId = $employeeId;
         $this->salary = $salary;
+    }
+
+    public function getEmployeeId(): int
+    {
+        return $this->employeeId;
+    }
+
+    public function getSalary(): float
+    {
+        return $this->salary;
     }
 }

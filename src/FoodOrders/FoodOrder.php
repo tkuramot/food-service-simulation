@@ -2,10 +2,24 @@
 
 namespace FoodOrders;
 
-use Cassandra\Timestamp;
-
 class FoodOrder
 {
     private array $items = [];
-    private Timestamp $orderedAt;
+    private int $orderedAt;
+
+    public function __construct(array $items, int $orderedAt)
+    {
+        $this->items = $items;
+        $this->orderedAt = $orderedAt;
+    }
+
+    public function getItems(): array
+    {
+        return $this->items;
+    }
+
+    public function getOrderedAt(): int
+    {
+        return $this->orderedAt;
+    }
 }
